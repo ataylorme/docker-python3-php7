@@ -38,4 +38,4 @@ RUN \
 RUN apt-get update && apt-get install -y python python-pip
 
 # Install pip dependencies
-RUN pip install pymysql sqlalchemy google-cloud-bigquery --yes
+RUN pip install pymysql sqlalchemy google-cloud-bigquery
