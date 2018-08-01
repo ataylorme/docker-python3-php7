@@ -35,4 +35,8 @@ RUN \
 	composer global require -n "hirak/prestissimo:^0.3"
 
 # Install Python
-RUN apt-get update && apt-get install -y python3-pip python3-venv
+RUN apt-get update && apt-get -y upgrade && apt-get install -y python3-pip python3-venv
+
+# Install pip dependencies
+RUN pip install setuptools --upgrade
+RUN pip install pymysql sqlalchemy google-cloud-bigquery --upgrade
