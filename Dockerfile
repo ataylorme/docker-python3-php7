@@ -38,5 +38,5 @@ RUN \
 RUN apt-get update && apt-get -y upgrade && apt-get install -y python3-pip python3-venv
 
 # Install pip dependencies
-RUN pip install setuptools --upgrade
-RUN pip install pymysql sqlalchemy google-cloud-bigquery --upgrade
+RUN pip3 install setuptools --upgrade
+RUN pip3 install pymysql sqlalchemy google-cloud-bigquery --upgrade
